@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category - Daily News Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span><i class="bi bi-envelope"></i> <a href="mailto:news@dailyportal.com">news@dailyportal.com</a></span>
+          <span class="ms-3"><i class="bi bi-telephone"></i> +977-1-4567890</span>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <span class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </span>
+          <span class="ms-3" id="datetime-display"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">Daily<span>News</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#national">National</a></li>
+              <li><a class="dropdown-item" href="#politics">Politics</a></li>
+              <li><a class="dropdown-item" href="#sports">Sports</a></li>
+              <li><a class="dropdown-item" href="#education">Education</a></li>
+              <li><a class="dropdown-item" href="#entertainment">Entertainment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="author.html">Author</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Reporter Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="breadcrumb-section">
+    <div class="container-fluid px-3 px-lg-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Category</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <main class="container-fluid px-3 px-lg-4 py-4">
+
+    <h2 class="section-title" id="national">National News</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=60" class="card-img-top" alt="National">
+          <div class="card-body">
+            <span class="badge badge-category">National</span>
+            <h5 class="card-title mt-2">Cabinet Approves National Budget for Fiscal Year</h5>
+            <p class="card-text small text-muted">Finance ministry presents allocation plan focusing on infrastructure and health.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=61" class="card-img-top" alt="National">
+          <div class="card-body">
+            <span class="badge badge-category">National</span>
+            <h5 class="card-title mt-2">Earthquake Preparedness Drill Held Nationwide</h5>
+            <p class="card-text small text-muted">Citizens participate in safety exercises across major cities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=62" class="card-img-top" alt="National">
+          <div class="card-body">
+            <span class="badge badge-category">National</span>
+            <h5 class="card-title mt-2">Renewable Energy Targets Set for 2030</h5>
+            <p class="card-text small text-muted">Government aims for 50% clean energy in national grid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- iii. Advertisement Section -->
+    <div class="ad-banner">
+      <h4><i class="bi bi-megaphone"></i> Advertise With Us</h4>
+      <p class="mb-2">Reach millions of readers. Premium banner placements available.</p>
+      <a href="contact.html" class="btn btn-light btn-sm">Contact Sales</a>
+    </div>
+
+    <h2 class="section-title mt-5" id="politics">Politics</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=63" class="card-img-top" alt="Politics">
+          <div class="card-body">
+            <span class="badge badge-category">Politics</span>
+            <h5 class="card-title mt-2">Coalition Talks Continue After Election Results</h5>
+            <p class="card-text small text-muted">Party leaders meet to form stable government alliance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=64" class="card-img-top" alt="Politics">
+          <div class="card-body">
+            <span class="badge badge-category">Politics</span>
+            <h5 class="card-title mt-2">New Anti-Corruption Bill Introduced in Parliament</h5>
+            <p class="card-text small text-muted">Stricter penalties proposed for public officials.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=65" class="card-img-top" alt="Politics">
+          <div class="card-body">
+            <span class="badge badge-category">Politics</span>
+            <h5 class="card-title mt-2">Foreign Minister Visits Neighboring Countries</h5>
+            <p class="card-text small text-muted">Diplomatic tour strengthens regional cooperation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="sports">Sports</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=66" class="card-img-top" alt="Sports">
+          <div class="card-body">
+            <span class="badge badge-category">Sports</span>
+            <h5 class="card-title mt-2">Football League Season Kicks Off This Weekend</h5>
+            <p class="card-text small text-muted">Twelve teams compete for championship title.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=67" class="card-img-top" alt="Sports">
+          <div class="card-body">
+            <span class="badge badge-category">Sports</span>
+            <h5 class="card-title mt-2">Marathon Record Broken at City Championship</h5>
+            <p class="card-text small text-muted">Athlete completes course in under 2 hours 10 minutes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=68" class="card-img-top" alt="Sports">
+          <div class="card-body">
+            <span class="badge badge-category">Sports</span>
+            <h5 class="card-title mt-2">Olympic Training Camp Opens for Young Athletes</h5>
+            <p class="card-text small text-muted">National sports council selects 50 promising talents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="education">Education</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=69" class="card-img-top" alt="Education">
+          <div class="card-body">
+            <span class="badge badge-category">Education</span>
+            <h5 class="card-title mt-2">Board Exam Results Published Online</h5>
+            <p class="card-text small text-muted">Students can check grades via official portal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=70" class="card-img-top" alt="Education">
+          <div class="card-body">
+            <span class="badge badge-category">Education</span>
+            <h5 class="card-title mt-2">Teacher Training Program Expanded to Rural Areas</h5>
+            <p class="card-text small text-muted">500 educators receive professional development workshops.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=71" class="card-img-top" alt="Education">
+          <div class="card-body">
+            <span class="badge badge-category">Education</span>
+            <h5 class="card-title mt-2">STEM Competition Winners Announced</h5>
+            <p class="card-text small text-muted">High school students showcase innovative science projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="entertainment">Entertainment</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=72" class="card-img-top" alt="Entertainment">
+          <div class="card-body">
+            <span class="badge badge-category">Entertainment</span>
+            <h5 class="card-title mt-2">Award Show Celebrates Best Films of the Year</h5>
+            <p class="card-text small text-muted">Stars gather for glamorous red carpet event.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=73" class="card-img-top" alt="Entertainment">
+          <div class="card-body">
+            <span class="badge badge-category">Entertainment</span>
+            <h5 class="card-title mt-2">Music Festival Lineup Revealed for Summer</h5>
+            <p class="card-text small text-muted">International artists join local performers on stage.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card news-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/250?random=74" class="card-img-top" alt="Entertainment">
+          <div class="card-body">
+            <span class="badge badge-category">Entertainment</span>
+            <h5 class="card-title mt-2">Celebrity Chef Opens Restaurant in Capital</h5>
+            <p class="card-text small text-muted">Fusion cuisine draws crowds on opening night.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- v. Pagination -->
+    <nav aria-label="Category pagination">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer class="big-footer">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>Daily News Portal</h5>
+          <p class="small">Browse news by category.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="index.html">Home</a> | <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="small-footer">
+    <p class="mb-0">&copy; 2026 Daily News Portal. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

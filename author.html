@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authors - Daily News Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span><i class="bi bi-envelope"></i> <a href="mailto:news@dailyportal.com">news@dailyportal.com</a></span>
+          <span class="ms-3"><i class="bi bi-telephone"></i> +977-1-4567890</span>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <span class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </span>
+          <span class="ms-3" id="datetime-display"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">Daily<span>News</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="category.html#national">National</a></li>
+              <li><a class="dropdown-item" href="category.html#politics">Politics</a></li>
+              <li><a class="dropdown-item" href="category.html#sports">Sports</a></li>
+              <li><a class="dropdown-item" href="category.html#education">Education</a></li>
+              <li><a class="dropdown-item" href="category.html#entertainment">Entertainment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="author.html">Author</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Reporter Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="breadcrumb-section">
+    <div class="container-fluid px-3 px-lg-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Author</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <main class="container-fluid px-3 px-lg-4 py-4 page-hero">
+
+    <section class="content-block">
+      <h3><i class="bi bi-chat-quote text-danger"></i> Editor's Speech</h3>
+      <p>Our team of dedicated journalists and reporters work tirelessly to bring you stories from every corner of the nation. Meet the talented professionals behind Daily News Portal.</p>
+    </section>
+
+    <section class="content-block">
+      <h3 class="section-title">Senior Reporters</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=80" alt="Reporter">
+              <h5 class="card-title">Anita Karki</h5>
+              <p class="text-muted small">Senior Political Reporter</p>
+              <p class="small">15 years experience covering parliament and elections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=81" alt="Reporter">
+              <h5 class="card-title">Bikash Adhikari</h5>
+              <p class="text-muted small">Senior Sports Correspondent</p>
+              <p class="small">Specializes in cricket, football, and Olympic coverage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=82" alt="Reporter">
+              <h5 class="card-title">Priya Shrestha</h5>
+              <p class="text-muted small">Investigative Journalist</p>
+              <p class="small">Award-winning reports on corruption and governance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=83" alt="Reporter">
+              <h5 class="card-title">Dipesh Tamang</h5>
+              <p class="text-muted small">Business & Economy Editor</p>
+              <p class="small">Covers markets, startups, and fiscal policy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h3 class="section-title">General Reporters</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=84" alt="Reporter">
+              <h5 class="card-title">Sunita Lama</h5>
+              <p class="text-muted small">Education Reporter</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=85" alt="Reporter">
+              <h5 class="card-title">Rajan Magar</h5>
+              <p class="text-muted small">Entertainment Reporter</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=86" alt="Reporter">
+              <h5 class="card-title">Kamala Bista</h5>
+              <p class="text-muted small">Health & Science Reporter</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card staff-card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="https://picsum.photos/120/120?random=87" alt="Reporter">
+              <h5 class="card-title">Nabin Chaudhary</h5>
+              <p class="text-muted small">Regional Correspondent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="big-footer">
+    <div class="container-fluid px-3 px-lg-4">
+      <p class="small mb-0">Meet our news team at Daily News Portal.</p>
+    </div>
+  </footer>
+  <footer class="small-footer">
+    <p class="mb-0">&copy; 2026 Daily News Portal. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

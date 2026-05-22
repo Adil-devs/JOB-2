@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily News Portal - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- i. Header Top Section -->
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span><i class="bi bi-envelope"></i> <a href="mailto:news@dailyportal.com">news@dailyportal.com</a></span>
+          <span class="ms-3"><i class="bi bi-telephone"></i> +977-1-4567890</span>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <span class="social-links">
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </span>
+          <span class="ms-3" id="datetime-display"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ii. Navigation Section -->
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">Daily<span>News</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="category.html#national">National</a></li>
+              <li><a class="dropdown-item" href="category.html#politics">Politics</a></li>
+              <li><a class="dropdown-item" href="category.html#sports">Sports</a></li>
+              <li><a class="dropdown-item" href="category.html#education">Education</a></li>
+              <li><a class="dropdown-item" href="category.html#entertainment">Entertainment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="author.html">Author</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Reporter Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- iii. Breaking News Section (jQuery Ticker) -->
+  <div class="breaking-news-bar">
+    <div class="breaking-label"><i class="bi bi-lightning-fill"></i> Breaking</div>
+    <div class="news-ticker-wrap">
+      <ul id="news-ticker">
+        <li class="active"><a href="#">Government announces new economic reform package for 2026</a></li>
+        <li><a href="#">National team secures historic victory in international championship</a></li>
+        <li><a href="#">Education ministry launches digital learning initiative nationwide</a></li>
+        <li><a href="#">Major infrastructure project approved for capital region development</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="container-fluid px-3 px-lg-4 py-4">
+
+    <!-- iv. Lead News + Four Selected News -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-8 lead-news">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/800/450?random=10" class="card-img-top" alt="Lead news">
+            <div class="card-body">
+              <span class="badge badge-category mb-2">National</span>
+              <h2 class="card-title">Parliament Passes Landmark Bill on Climate Action and Green Energy</h2>
+              <p class="text-muted">Lawmakers approved comprehensive legislation aimed at reducing carbon emissions by 40% within the next decade, marking a significant step toward sustainable development.</p>
+              <a href="category.html" class="btn btn-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="section-title mb-3" style="font-size:1rem;">Selected News</h5>
+          <div class="side-news-item d-flex gap-3">
+            <img src="https://picsum.photos/100/70?random=11" alt="News" class="rounded">
+            <div>
+              <h6><a href="category.html">Political Summit Concludes with New Trade Agreements</a></h6>
+              <small class="text-muted">May 22, 2026</small>
+            </div>
+          </div>
+          <div class="side-news-item d-flex gap-3">
+            <img src="https://picsum.photos/100/70?random=12" alt="News" class="rounded">
+            <div>
+              <h6><a href="category.html">Sports Federation Announces Youth Development Program</a></h6>
+              <small class="text-muted">May 21, 2026</small>
+            </div>
+          </div>
+          <div class="side-news-item d-flex gap-3">
+            <img src="https://picsum.photos/100/70?random=13" alt="News" class="rounded">
+            <div>
+              <h6><a href="category.html">Tech Giants Invest in Local Startup Ecosystem</a></h6>
+              <small class="text-muted">May 20, 2026</small>
+            </div>
+          </div>
+          <div class="side-news-item d-flex gap-3">
+            <img src="https://picsum.photos/100/70?random=14" alt="News" class="rounded">
+            <div>
+              <h6><a href="category.html">Healthcare Reform Brings Free Checkups to Rural Areas</a></h6>
+              <small class="text-muted">May 19, 2026</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- v. Latest News Section -->
+    <section class="mb-5">
+      <h3 class="section-title">Latest News</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=20" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge badge-category">Politics</span>
+              <h5 class="card-title mt-2">Opposition Calls for Emergency Parliamentary Session</h5>
+              <p class="card-text small text-muted">Leaders demand immediate discussion on rising inflation and unemployment rates.</p>
+              <a href="category.html" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=21" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge badge-category">Sports</span>
+              <h5 class="card-title mt-2">Cricket Team Prepares for World Cup Qualifiers</h5>
+              <p class="card-text small text-muted">Intensive training camp begins ahead of crucial qualifying matches next month.</p>
+              <a href="category.html" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=22" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge badge-category">Entertainment</span>
+              <h5 class="card-title mt-2">Film Festival Opens with Record International Entries</h5>
+              <p class="card-text small text-muted">Over 200 films from 45 countries compete for top honors this year.</p>
+              <a href="category.html" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vi. National News Section -->
+    <section class="mb-5">
+      <h3 class="section-title">National News</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=30" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h6 class="card-title">New Highway Connects Remote Districts to Capital</h6>
+              <p class="card-text small text-muted">Infrastructure project reduces travel time by 50%.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=31" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h6 class="card-title">Agricultural Subsidy Program Benefits Farmers</h6>
+              <p class="card-text small text-muted">Government allocates budget for modern farming equipment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=32" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h6 class="card-title">Tourism Board Reports Record Visitor Numbers</h6>
+              <p class="card-text small text-muted">Spring season sees 30% increase in domestic travelers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=33" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h6 class="card-title">Water Supply Project Completed in Urban Areas</h6>
+              <p class="card-text small text-muted">Clean drinking water now reaches 500,000 households.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vii. Education News Section -->
+    <section class="mb-5">
+      <h3 class="section-title">Education News</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=40" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title">Universities Launch AI and Robotics Programs</h5>
+              <p class="card-text small text-muted">New curriculum prepares students for emerging technology careers.</p>
+              <a href="category.html#education" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=41" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title">Scholarship Fund Opens for Underprivileged Students</h5>
+              <p class="card-text small text-muted">Private sector partners with government on education initiative.</p>
+              <a href="category.html#education" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card news-card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/250?random=42" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title">School Libraries Receive Digital Book Donations</h5>
+              <p class="card-text small text-muted">Thousands of e-books distributed to rural schools nationwide.</p>
+              <a href="category.html#education" class="btn btn-outline-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- viii. Big Footer Section -->
+  <footer class="big-footer">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>About Daily News</h5>
+          <p class="small">Your trusted source for national and international news. We deliver accurate, timely journalism since 2010.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="category.html">Categories</a>
+          <a href="author.html">Authors</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-md-3">
+          <h5>Categories</h5>
+          <a href="category.html#national">National</a>
+          <a href="category.html#politics">Politics</a>
+          <a href="category.html#sports">Sports</a>
+          <a href="category.html#education">Education</a>
+          <a href="category.html#entertainment">Entertainment</a>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="bi bi-geo-alt"></i> Kathmandu, Nepal</p>
+          <p class="small mb-1"><i class="bi bi-telephone"></i> +977-1-4567890</p>
+          <p class="small"><i class="bi bi-envelope"></i> news@dailyportal.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ix. Footer Section -->
+  <footer class="small-footer">
+    <div class="container-fluid">
+      <p class="mb-0"> 2026 Daily News Portal. All Rights Reserved. | <a href="login.html">Reporter Login</a></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
